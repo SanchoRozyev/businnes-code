@@ -1,0 +1,272 @@
+.about-text-grid {
+  display: grid;
+}
+
+.about-text-grid h1 {
+  text-align: center;
+}
+
+.about-img-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.about-img-double {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-contact {
+  background-image: url('../Assets/774335c44ee6ed37ec6815941da76cdd.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.about-contact h2 {
+  text-align: center;
+}
+
+.about-contact p {
+  text-align: center;
+}
+
+.about-contact button:hover {
+  background-color: rgb(252, 103, 89);
+}
+
+.about-contact-grid input {
+  border: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+.req-conf {
+  background-color: rgba(5, 5, 5, 0.5);
+  text-align: center;
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+}
+
+@media(max-width:600px) {
+  .about-text-grid {
+    grid-template-columns: 100%;
+    padding: 20px;
+  }
+
+  .about-text-grid h1 {
+    padding-bottom: 15px;
+  }
+
+  .about-img-grid {
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .about-img-double {
+    gap: 10px;
+  }
+
+  .about-img-grid img {
+    border-radius: 10px;
+  }
+
+  .about-contact {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-contact h2 {
+    padding-bottom: 5px;
+  }
+
+  .about-contact p {
+    padding-bottom: 10px;
+    width: 90%;
+  }
+
+  .about-contact-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+
+  .about-contact-grid input {
+    width: 70%;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    padding: 3px 4px;
+  }
+
+  .ab-btn-con {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-contact-grid button {
+    width: 70%;
+    border-radius: 3px;
+    padding: 4px 4px;
+  }
+
+  .req-conf {
+    padding: 20px;
+    margin-top: 10px;
+  }
+}
+
+@media(min-width:601px) and (max-width:1400px) {
+  .about-text-grid {
+    grid-template-columns: 50% 50%;
+    padding: 80px;
+    column-gap: 20px;
+  }
+
+  .about-text-grid h1 {
+    padding-bottom: 15px;
+    text-align: left;
+  }
+
+  .about-img-grid {
+    padding: 80px;
+    gap: 10px;
+  }
+
+  .about-img-double {
+    gap: 20px;
+  }
+
+  .about-img-grid img {
+    border-radius: 16px;
+    width: 98.5%;
+  }
+
+  .about-img-double img {
+    width: 100%;
+  }
+
+  .about-contact {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-contact h2 {
+    padding-bottom: 10px;
+  }
+
+  .about-contact p {
+    padding-bottom: 20px;
+    width: 80%;
+  }
+
+  .about-contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    width: 80%;
+    column-gap: 10px;
+    row-gap: 20px;
+  }
+
+  .about-contact-grid input {
+    width: 100%;
+    border-radius: 6px;
+    padding: 10px 12px;
+  }
+
+  .ab-btn-con {
+    grid-column-start: span 3;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-contact-grid button {
+    width: 40%;
+    border-radius: 10px;
+    padding: 15px 20px;
+    grid-column-start: span 3;
+  }
+
+  .req-conf {
+    padding: 40px;
+  }
+}
+
+@media(min-width:1401px) {
+  .about-text-grid {
+    grid-template-columns: 50% 50%;
+    padding: 120px 165px;
+    column-gap: 40px;
+  }
+
+  .about-text-grid h1 {
+    text-align: left;
+  }
+
+  .about-img-grid {
+    padding: 120px 165px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .about-img-double {
+    gap: 20px;
+  }
+
+  .about-img-grid img {
+    border-radius: 16px;
+    width: 98%;
+  }
+
+  .about-img-double img {
+    width: 100%;
+  }
+
+  .about-contact {
+    padding: 100px 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-contact h2 {
+    padding-bottom: 16px;
+  }
+
+  .about-contact p {
+    padding-bottom: 40px;
+    width: 60%;
+  }
+
+  .about-contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    width: 90%;
+    column-gap: 10px;
+    row-gap: 20px;
+  }
+
+  .about-contact-grid input {
+    width: 100%;
+    border-radius: 6px;
+    padding: 16px 20px;
+  }
+
+  .about-contact-grid button {
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px 32px;
+  }
+
+  .req-conf {
+    padding: 80px;
+  }
+}

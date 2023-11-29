@@ -1,0 +1,155 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews h1 {
+  text-align: center;
+}
+
+.reviews h4 {
+  text-align: center;
+}
+
+.review-grid {
+  display: grid;
+}
+
+.review-grid-ch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: fit-content;
+}
+
+.reviewer-img-c {
+  display: flex;
+  justify-content: center;
+}
+
+@media(max-width:600px) {
+  .reviews {
+    padding: 30px 50px;
+  }
+
+  .reviews h1 {
+    padding-bottom: 8px;
+  }
+
+  .reviews h4 {
+    padding-bottom: 25px;
+  }
+
+  .review-grid {
+    flex-direction: 1fr;
+    gap: 20px;
+    max-width: 80%;
+  }
+
+  .review-grid-ch {
+    border-radius: 5%;
+    padding: 15px 10px 25px;
+  }
+
+  .reviewer-img-c {
+    margin-bottom: 11px;
+  }
+
+  .reviewer-img-c img {
+    max-width: 70%;
+  }
+
+  .review-text {
+    max-width: 90%;
+    padding-bottom: 11px;
+    overflow-wrap: break-word;
+  }
+
+  .reviewer-name {
+    padding-bottom: 7px;
+  }
+}
+
+@media(min-width:601px) and (max-width:1400px) {
+  .reviews {
+    padding: 80px 120px;
+  }
+
+  .reviews h1 {
+    padding-bottom: 16px;
+  }
+
+  .reviews h4 {
+    padding-bottom: 60px;
+  }
+
+  .review-grid {
+    grid-template-columns: 33% 33% 33%;
+    gap: 20px;
+    max-width: 100%;
+  }
+
+  .review-grid-ch {
+    border-radius: 5%;
+    padding: 30px 20px;
+  }
+
+  .reviewer-img-c {
+    margin-bottom: 22px;
+  }
+
+  .reviewer-img-c img {
+    max-width: 90%;
+  }
+
+  .review-text {
+    max-width: 90%;
+    padding-bottom: 30px;
+    overflow-wrap: break-word;
+  }
+
+  .reviewer-name {
+    padding-bottom: 7px;
+  }
+}
+
+@media(min-width:1401px) {
+  .reviews {
+    padding: 100px 180px;
+  }
+
+  .reviews h1 {
+    padding-bottom: 24px;
+  }
+
+  .reviews h4 {
+    padding-bottom: 80px;
+  }
+
+  .review-grid {
+    grid-template-columns: 33% 33% 33%;
+    gap: 30px;
+    max-width: 100%;
+  }
+
+  .review-grid-ch {
+    border-radius: 5%;
+    padding: 40px 32px;
+  }
+
+  .reviewer-img-c {
+    margin-bottom: 32px;
+  }
+
+  .review-text {
+    max-width: 90%;
+    padding-bottom: 30px;
+    overflow-wrap: break-word;
+  }
+
+  .reviewer-name {
+    padding-bottom: 7px;
+  }
+}

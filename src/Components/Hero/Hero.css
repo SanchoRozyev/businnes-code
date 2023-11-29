@@ -1,0 +1,90 @@
+.hero {
+  background-image: url('../Assets/image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-text {
+  background: rgba(0, 0, 0, 0.30);
+}
+
+.price-button:hover {
+  background: #ff6d60;
+}
+
+.details-button:hover {
+  background: #dcdcdc;
+}
+
+@media(max-width:800px) {
+  .hero {
+    background-position: center;
+  }
+
+
+  .hero-text {
+    padding: 90px 10px 90px 60px;
+  }
+
+  .hero-text h1 {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+
+  .hero-text p {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .hero-text button {
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-right: 10px;
+  }
+}
+
+@media(min-width:801px) and (max-width:1400px) {
+  .hero-text {
+    padding: 220px 80px;
+  }
+
+  .hero-text h1 {
+    width: 30%;
+    margin-bottom: 20px;
+    line-height: 1;
+  }
+
+  .hero-text p {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .hero-text button {
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin-right: 10px;
+  }
+}
+
+@media(min-width:1401px) {
+  .hero-text {
+    padding: 220px 160px;
+  }
+
+  .hero-text h1 {
+    width: 30%;
+    margin-bottom: 24px;
+    line-height: 1;
+  }
+
+  .hero-text p {
+    width: 40%;
+    margin-bottom: 24px;
+  }
+
+  .hero-text button {
+    border-radius: 6px;
+    padding: 20px 32px;
+    margin-right: 16px;
+  }
+}

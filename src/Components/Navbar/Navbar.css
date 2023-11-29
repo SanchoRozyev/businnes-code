@@ -1,0 +1,208 @@
+.navbar {
+  display: grid;
+}
+
+.nav-menu1 a:hover,
+.nav-menu2 a:hover {
+  color: rgba(43, 43, 43, 0.7);
+}
+
+.nav-menu1 a:active,
+.nav-menu2 a:active {
+  color: rgba(64, 64, 64, 0.7);
+}
+
+.call-button {
+  display: flex;
+}
+
+.call-button button {
+  border: none;
+  cursor: pointer;
+}
+
+.call-button button:hover {
+  background-color: #fd685b;
+}
+
+.call-button button:active {
+  background-color: #fe786b;
+}
+
+@media(max-width:600px) {
+  .navbar {
+    padding: 10px;
+    grid-template-columns: 40% 50% 10%;
+  }
+
+  .nav-menu1 {
+    display: none;
+  }
+
+  .call-button {
+    justify-content: end;
+    align-items: center;
+    margin-right: 30px;
+  }
+
+  .call-button button {
+    border-radius: 3px;
+    padding: 2px 5px;
+  }
+
+  .phone-number {
+    display: none;
+  }
+
+  .dropdown-con {
+    display: flex;
+    justify-content: start;
+  }
+
+  .dropdown {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .dropdown button {
+    width: 20px;
+    height: 20px;
+    border: none;
+    transition: width 0.2s;
+  }
+
+  .dropdown button:hover {
+    width: 18px;
+  }
+
+  .dropdown button img {
+    transition: transform 0.3s;
+  }
+
+  .dropdown button:hover+.dropdown button img,
+  .dropdown button img:hover {
+    transform: rotate(180deg);
+  }
+
+  .nav-menu2 {
+    position: absolute;
+    top: 25px;
+    right: -100%;
+    white-space: nowrap;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: opacity 0.2s, transform 0.2s;
+  }
+
+  .nav-menu2 li {
+    padding-bottom: 5px;
+  }
+
+  .dropdown>.dropdown-button:focus+.nav-menu2 {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+}
+
+@media(min-width:601px) and (max-width:800px) {
+  .navbar {
+    padding: 10px 20px;
+    grid-template-columns: 20% 60% 20%;
+    align-items: end;
+  }
+
+  .nav-menu1 {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding-bottom: 2px;
+  }
+
+  .call-button {
+    justify-content: end;
+  }
+
+  .call-button button {
+    border-radius: 3px;
+    padding: 3px 6px;
+  }
+
+  .phone-number {
+    display: none;
+  }
+
+  .dropdown-con {
+    display: none;
+  }
+}
+
+@media(min-width:801px) and (max-width:1200px) {
+  .navbar {
+    padding: 10px 15px;
+    grid-template-columns: 20% 60% 20%;
+    align-items: end;
+  }
+
+  .nav-menu1 {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding-bottom: 5px;
+  }
+
+  .call-button {
+    justify-content: end;
+  }
+
+  .call-button button {
+    border-radius: 3px;
+    padding: 5px 10px;
+  }
+
+  .phone-number {
+    display: none;
+  }
+
+  .dropdown-con {
+    display: none;
+  }
+}
+
+@media(min-width:1201px) {
+  .navbar {
+    padding: 26px 40px;
+    grid-template-columns: 20% 50% 14% 16%;
+    align-items: center;
+  }
+
+  .nav-menu1 {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+  }
+
+  .call-button {
+    justify-content: end;
+    align-items: center;
+  }
+
+  .call-button button {
+    border-radius: 6px;
+    padding: 12px 24px;
+  }
+
+  .phone-number {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .dropdown-con {
+    display: none;
+  }
+}
